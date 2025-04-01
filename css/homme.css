@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #2d2d2d;
+    --secondary-color: #5a5a5a;
+    --accent-color: #0077be;
+}
+
+.category-hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
